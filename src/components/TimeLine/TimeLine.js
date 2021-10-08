@@ -75,9 +75,9 @@ const Timeline = () => {
         <br />
         I have a background in both front-end and back-end development, and I
         have a decent level of knowledge on Machine Learning.
-        <br />I am a self-taught developer, and I am always looking to learn new skills
-        and technologies. Being a team player, I always look forward to work in
-        a team environment.
+        <br />I am a self-taught developer, and I am always looking to learn new
+        skills and technologies. Being a team player, I always look forward to
+        work in a team environment.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -149,6 +149,9 @@ const Timeline = () => {
         })}
       </CarouselButtons>
       <SectionDivider />
+      <br />
+      <br />
+      <SectionTitle>Contact Me</SectionTitle>
     </Section>
   );
 };
