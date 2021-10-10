@@ -25,24 +25,31 @@ export const Boxes = styled.div`
 export const Box = styled.div`
   background: #212d45;
   border-radius: 12px;
-  height: 344px;
-  padding: 24px;
-  @media ${(props) => props.theme.breakpoints.lg} {
-    height: 210px;
-  }
-
+  height: 350px;
+  padding: 22px;
+ 
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 135px;
-    padding: 16px;
+    height: 250px;
+    padding: 14px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 110px;
-    padding: 12px;
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+  }
+`;
 
-    &:nth-child(2n) {
-      grid-row: 2;
-    }
+export const BoxImage = styled.img`
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 100px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 70px;
   }
 `;
 export const BoxTitle = styled.h5`
@@ -55,12 +62,12 @@ export const BoxTitle = styled.h5`
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 16px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 16px;
   }
 `;
 
@@ -73,7 +80,7 @@ export const BoxDescription = styled.p`
   color: rgba(255, 255, 255, 0.75);
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
 
