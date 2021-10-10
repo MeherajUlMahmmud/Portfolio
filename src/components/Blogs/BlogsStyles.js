@@ -45,6 +45,9 @@ export const BoxImage = styled.img`
   height: 170px;
   object-fit: cover;
   border-radius: 12px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    height: 120px;
+  }
   @media ${(props) => props.theme.breakpoints.md} {
     height: 100px;
   }
