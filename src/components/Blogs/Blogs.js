@@ -7,7 +7,7 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { Box, Boxes, BoxTitle, BoxDescription } from "./BlogsStyles";
+import { Box, Boxes, BoxImage, BoxTitle, BoxDescription } from "./BlogsStyles";
 
 const Blogs = () => (
   <Section id="blogs">
@@ -19,18 +19,11 @@ const Blogs = () => (
       {blogs.map((card, index) => (
         <a href={card.source} target="_blank">
           <Box key={index}>
-            <img
+            <BoxImage
               src={card.image}
               alt={card.title}
-              style={{
-                width: "100%",
-                height: "150px",
-                objectFit: "cover",
-                borderRadius: "5px",
-                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)",
-              }}
             />
-            <BoxTitle>{card.title.substring(0, 30)}...</BoxTitle>
+            <BoxTitle>{card.title.substring(0, 28)}...</BoxTitle>
             <hr
               style={{
                 width: "100%",
@@ -42,7 +35,7 @@ const Blogs = () => (
               }}
             />
             <BoxDescription>
-              {card.description.substring(0, 40)}...
+              {card.description.substring(0, 45)}...
             </BoxDescription>
           </Box>
         </a>
