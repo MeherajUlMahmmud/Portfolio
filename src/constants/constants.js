@@ -62,6 +62,30 @@ export const projects = [
   },
 ];
 
+export const blogs = [
+  {
+    title: "Linear Regression Raw Python Implementation",
+    description:
+      "Raw Python Implementation of Simple Linear Regression (Univariate).",
+    image: "/images/blog1.png",
+    source:
+      "https://medium.com/@meheraj/linear-regression-raw-python-implementation-d797f5e3508d",
+  },
+  {
+    title: "Basics of Linear Algebra",
+    description: "Linear Algebra Operations Using Raw Python.",
+    image: "/images/blog2.jpeg",
+    source: "https://medium.com/@meheraj/basics-of-linear-algebra-4ef0570a8313",
+  },
+  {
+    title: "Inverting a matrix in Python",
+    description: "Implementing a python script to inverse a 3x3 square matrix.",
+    image: "/images/blog3.jpeg",
+    source:
+      "https://medium.com/@meheraj/inverting-a-matrix-in-python-3f7c1c136cf4",
+  },
+];
+
 export const TimeLineData = [
   {
     year: 2017,
