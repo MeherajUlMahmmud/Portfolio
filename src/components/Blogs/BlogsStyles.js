@@ -35,7 +35,7 @@ export const Box = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: 160px;
+    height: 200px;
     padding: 10px;
   }
 `;
@@ -49,7 +49,7 @@ export const BoxImage = styled.img`
     height: 100px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 70px;
+    height: 90px;
   }
 `;
 export const BoxTitle = styled.h5`
@@ -66,8 +66,8 @@ export const BoxTitle = styled.h5`
     line-height: 16px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
 `;
 
@@ -85,8 +85,8 @@ export const BoxDescription = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
   }
 `;
 
