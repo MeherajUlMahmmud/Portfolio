@@ -103,7 +103,7 @@ export const TimeLineData = [
     year: 2021,
     text: "Awarded Dean's List Scholarship in the session of 2021-2022",
   },
-  { year: 2021, text: "Started Frelance Web Development and Mobile App Development" },
+  { year: 2021, text: "Started Freelance Web and Mobile App Development" },
   { year: 2021, text: "Appointed as an Undergraduate Teaching Assistant" },
   // {
   //   year: 2021,
