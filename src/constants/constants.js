@@ -105,8 +105,8 @@ export const TimeLineData = [
   },
   { year: 2021, text: "Started Freelance Web and Mobile App Development" },
   { year: 2021, text: "Appointed as an Undergraduate Teaching Assistant" },
-  // {
-  //   year: 2021,
-  //   text: "Appointed as an Intern Mobile App Developer at ZeroInf",
-  // },
+  {
+    year: 2021,
+    text: "Appointed as an Intern Mobile App Developer at ZeroInv",
+  },
 ];
