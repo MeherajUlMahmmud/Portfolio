@@ -16,7 +16,7 @@ export const projects = [
 		image: "/images/1.png",
 		tags: ["Django", "HTML-CSS-JS", "SQLite"],
 		source: "https://github.com/MeherajUlMahmmud/AMIC",
-		visit: "#",
+		visit: "https://damp-plains-51716.herokuapp.com/",
 		id: 1,
 	},
 	{
