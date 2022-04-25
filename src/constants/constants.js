@@ -105,6 +105,6 @@ export const TimeLineData = [
 	{ year: 2021, text: "Appointed as an Undergraduate Teaching Assistant" },
 	{
 		year: 2021,
-		text: "Appointed as an Intern Mobile App Developer at ZeroInv",
+		text: "Appointed as a Software Engineer at ZeroInv",
 	},
 ];
