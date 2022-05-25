@@ -85,10 +85,10 @@ export const blogs = [
 ];
 
 export const TimeLineData = [
-	{
-		year: 2017,
-		text: "Completed my Higher Secondary Certificate exam with a GPA of 4.00 out of 5.00",
-	},
+	// {
+	// 	year: 2017,
+	// 	text: "Completed my Higher Secondary Certificate exam with a GPA of 4.00 out of 5.00",
+	// },
 	{
 		year: 2018,
 		text: "Started my B.Sc. in Computer Science & Engineering at East West University",
@@ -105,6 +105,6 @@ export const TimeLineData = [
 	{ year: 2021, text: "Appointed as an Undergraduate Teaching Assistant" },
 	{
 		year: 2021,
-		text: "Appointed as a Software Engineer at ZeroInv",
+		text: "Appointed as a Junior Software Engineer at ZeroInv",
 	},
 ];
