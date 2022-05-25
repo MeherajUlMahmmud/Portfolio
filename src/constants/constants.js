@@ -15,7 +15,7 @@ export const projects = [
 			"This is a Cloud based Health care System built with Django. This system provides services i.e. Doctors’ Appointment, Emergency Services (Blood Donation, Plasma Donation), Health Advisor, Blog",
 		image: "/images/1.png",
 		tags: ["Django", "HTML-CSS-JS", "SQLite"],
-		source: "https://github.com/MeherajUlMahmmud/AMIC",
+		source: "https://github.com/MeherajUlMahmmud/AMIC-v2.0",
 		visit: "https://damp-plains-51716.herokuapp.com/",
 		id: 1,
 	},
