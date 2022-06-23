@@ -25,8 +25,8 @@ const Footer = () => {
 				</LinkColumn>
 				<LinkColumn>
 					<LinkTitle>Email</LinkTitle>
-					<LinkItem href="mailto:meherajmahmmd@gmail.com">
-						meherajmahmmd@gmail.com
+					<LinkItem href="mailto:meharajulmahmmud@gmail.com">
+						meharajulmahmmud@gmail.com
 					</LinkItem>
 				</LinkColumn>
 				<LinkColumn>
@@ -36,7 +36,7 @@ const Footer = () => {
 				<LinkColumn>
 					<LinkTitle>Resume</LinkTitle>
 					<LinkItem
-						href="https://drive.google.com/file/d/1RXWNMN7LeAeMnXt5MX8Wv3lS5kIBJtyB/view?usp=sharing"
+						href="https://drive.google.com/file/d/1HZmBsc4ZC1KBxajVWP2Q5bhd3aQ6oIKx/view?usp=sharing"
 						target="_blank"
 					>
 						Check Out My Resume
