@@ -3,42 +3,60 @@ export const projects = [
 		title: "JobLand",
 		description:
 			"Using Django in the backend, and HTML, CSS in the frontend I bult this project as a University term-project. This is a Job Portal where employers post about the empty positions in their organizations, and applicants apply for any position they see fit.",
-		image: "/images/0.png",
-		tags: ["Django", "HTML-CSS-JS", "SQLite"],
+		image: "/images/Jobland.png",
+		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
 		source: "https://github.com/MeherajUlMahmmud/JobLand",
-		visit: "#",
-		id: 0,
+		visit: "https://jobland-django.herokuapp.com/",
 	},
 	{
 		title: "AMIC",
 		description:
 			"This is a Cloud based Health care System built with Django. This system provides services i.e. Doctors’ Appointment, Emergency Services (Blood Donation, Plasma Donation), Health Advisor, Blog",
-		image: "/images/1.png",
-		tags: ["Django", "HTML-CSS-JS", "SQLite"],
+		image: "/images/AMIC.png",
+		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
 		source: "https://github.com/MeherajUlMahmmud/AMIC-v2.0",
-		visit: "https://damp-plains-51716.herokuapp.com/",
-		id: 1,
+		visit: "https://amic-django.herokuapp.com/",
+	},
+	// {
+	// 	title: "DevBlog",
+	// 	description:
+	// 		"This is a blogging app built with Django framework. This is one of the early projects I built with Django.",
+	// 	image: "/images/2.png",
+	// 	tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
+	// 	source: "https://github.com/MeherajUlMahmmud/DevBlog",
+	// 	visit: "https://devblog-234.herokuapp.com/",
+	// },
+	{
+		title: "iShkool",
+		description:
+			"This is an education platform built with React.js and  framework. This is one of the professional projects I have built as a Junior Software Engineer.",
+		image: "/images/iShkool.png",
+		tags: ["React.js", "Node.js", "PostgreSQL"],
+		source: "#",
+		visit: "https://www.ishkool.org/",
 	},
 	{
-		title: "DevBlog",
+		title: "BetNow",
 		description:
-			"This is a blogging app built with Django framework. This is one of the early projects I built with Django.",
-		image: "/images/2.png",
-		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
-		source: "https://github.com/MeherajUlMahmmud/DevBlog",
-		visit: "https://devblog-234.herokuapp.com/",
-		id: 2,
+			"This is a Betting platform built with React.js and Node.js. This is one of the most complex projects I have built so far.",
+		credentials: {
+			username: "Username: admin",
+			password: "Password: 123456",
+		},
+		image: "/images/BetNow.png",
+		tags: ["React.js", "Node.js", "PostgreSQL"],
+		source: "#",
+		visit: "https://betnow-client.herokuapp.com/",
 	},
-	{
-		title: "EasyAd",
-		description:
-			"This is a Advertising Platform where billboard owners rents their bilboards to companoes for their advertising purpose.",
-		image: "/images/3.png",
-		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
-		source: "https://github.com/MeherajUlMahmmud/EasyAd",
-		visit: "https://easyad-bd.herokuapp.com/",
-		id: 3,
-	},
+	// {
+	// 	title: "EasyAd",
+	// 	description:
+	// 		"This is a Advertising Platform where billboard owners rents their bilboards to companoes for their advertising purpose.",
+	// 	image: "/images/3.png",
+	// 	tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
+	// 	source: "https://github.com/MeherajUlMahmmud/EasyAd",
+	// 	visit: "https://easyad-bd.herokuapp.com/",
+	// },
 	{
 		title: "Rokto Lagbe",
 		description:
@@ -47,7 +65,6 @@ export const projects = [
 		tags: ["Android", "Java", "Firebase"],
 		source: "https://github.com/MeherajUlMahmmud/BloodDonationFirebase",
 		visit: "#",
-		id: 4,
 	},
 	{
 		title: "Restaurant App",
@@ -57,7 +74,6 @@ export const projects = [
 		tags: ["Flutter", "Django REST Framework", "SQLite"],
 		source: "https://github.com/MeherajUlMahmmud/Crust-and-Bunz/tree/master/mobile_app",
 		visit: "#",
-		id: 5,
 	},
 ];
 
