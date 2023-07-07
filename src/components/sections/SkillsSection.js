@@ -115,11 +115,13 @@ const SkillItem = ({ icon, title, details }) => {
 			<div className='skill__item__icon'>
 				<i className={icon}></i>
 			</div>
-			<div className='skill__item__details'>
+			<div className='skill__item__body'>
 				<div className='skill__item__title'>
 					{title}
 				</div>
-				{details}
+				<div className='skill__item__details'>
+					{details}
+				</div>
 			</div>
 		</div>
 	)
