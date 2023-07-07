@@ -5,6 +5,7 @@ function ContactSection() {
 	return (
 		<div className="parallax-section" id='contact'>
 			<div className="parallax-content">
+				<h1>Get in touch</h1>
 				<div className='contact__content__portion'>
 					<div className='left__portion'>
 						<img src='https://unsplash.it/500/500' alt='profile' className='contact__img' />
@@ -13,7 +14,7 @@ function ContactSection() {
 						<div className='contact__content__portion__details'>
 							<CustomButton
 								text={'Send an e-mail'}
-								bgColor={'#fff'}
+								bgColor={'burlywood'}
 								textColor={'#000'}
 								icon={'fa fa-envelope'}
 								onPress={() => {
@@ -22,7 +23,7 @@ function ContactSection() {
 							/>
 							<CustomButton
 								text={'Place a call'}
-								bgColor={'#fff'}
+								bgColor={'burlywood'}
 								textColor={'#000'}
 								icon={'fa fa-phone'}
 								onPress={() => {
@@ -31,7 +32,7 @@ function ContactSection() {
 							/>
 							<CustomButton
 								text={'Github'}
-								bgColor={'#fff'}
+								bgColor={'burlywood'}
 								textColor={'#000'}
 								icon={'fa-brands fa-github'}
 								onPress={() => {
@@ -40,7 +41,7 @@ function ContactSection() {
 							/>
 							<CustomButton
 								text={'Facebook'}
-								bgColor={'#fff'}
+								bgColor={'burlywood'}
 								textColor={'#000'}
 								icon={'fa-brands fa-facebook'}
 								onPress={() => {

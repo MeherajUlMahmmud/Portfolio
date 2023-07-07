@@ -8,11 +8,12 @@ function SkillsSection() {
 	return (
 		<div className="parallax-section" id='skills'>
 			<div className="parallax-content">
+				<h1>Skills and Expertise</h1>
 				<div className='skill__content__portion'>
 					<div className='top__portion'>
 						<CustomButton
 							text={'Coding Skills'}
-							bgColor={isCodingSkills ? '#000' : '#fff'}
+							bgColor={isCodingSkills ? 'burlywood' : '#fff'}
 							textColor={isCodingSkills ? '#fff' : '#000'}
 							onPress={() => {
 								setIsCodingSkills(true);
@@ -21,7 +22,7 @@ function SkillsSection() {
 						/>
 						<CustomButton
 							text={'Soft Skills'}
-							bgColor={isSoftSkills ? '#000' : '#fff'}
+							bgColor={isSoftSkills ? 'burlywood' : '#fff'}
 							textColor={isSoftSkills ? '#fff' : '#000'}
 							onPress={() => {
 								setIsCodingSkills(false);

@@ -5,6 +5,7 @@ import ProfileSection from './components/sections/ProfileSection';
 import SkillsSection from './components/sections/SkillsSection';
 import ExperienceSection from './components/sections/ExperienceSection';
 import ContactSection from './components/sections/ContactSection';
+import ProjectsSection from './components/sections/ProjectsSection';
 
 const Parallax = () => {
 
@@ -31,6 +32,7 @@ const Parallax = () => {
 			<HomeSection />
 			<ProfileSection />
 			<SkillsSection />
+			<ProjectsSection />
 			<ExperienceSection />
 			<ContactSection />
 		</div>
