@@ -4,6 +4,11 @@ export const images = [
 	require("./assets/images/image-3.jpg"),
 ]
 
+export const person_images = [
+	require("./assets/images/person-1.svg"),
+	require("./assets/images/person-2.svg"),
+]
+
 export const projects = [
 	{
 		title: "JobLand",

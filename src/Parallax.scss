@@ -31,11 +31,19 @@
 	.home__content__portion {
 		width: 50%;
 		margin: 0 0 20px;
+
+		h1 {
+			font-size: 90px;
+			font-weight: 600;
+			font-family: "Oleo Script", cursive;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.profile__content__portion {
 		width: 80%;
-		color: #fff;
+		color: #000;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-content: center;
@@ -61,6 +69,207 @@
 				color: #fff;
 				font-size: 24px;
 				text-align: center;
+			}
+		}
+	}
+
+	.skill__content__portion {
+		width: 70%;
+		color: #000;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.top__portion {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+			margin-bottom: 20px;
+		}
+
+		.bottom__portion {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 50px;
+
+			.skill__item {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 220px;
+				width: 240px;
+				padding: 20px;
+				border: 1px solid rgb(178, 175, 175);
+				border-radius: 15px;
+
+				&:hover {
+					border: 1px solid #000;
+				}
+
+				.skill__item__icon {
+					color: #000;
+					font-size: 30px;
+					text-align: left;
+				}
+
+				.skill__item__details {
+					// display: flex;
+					gap: 10px;
+					height: 150px;
+					// background-color: blueviolet;
+					width: 100%;
+					color: gray;
+					font-size: 18px;
+					text-align: left;
+					font-weight: bolder;
+
+					.skill__item__title {
+						// height: 50px;
+						// background-color: aquamarine;
+						color: #000;
+						font-size: 22px;
+						margin-bottom: 20px;
+						padding: 10px 0;
+					}
+				}
+			}
+		}
+	}
+
+	.experience__content__portion {
+		width: 80%;
+		color: #000;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 60px;
+		justify-content: center;
+		align-items: center;
+		// background-color: aqua;
+
+		.left__portion {
+			.experience__content__portion__details {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+				height: 75vh;
+				width: 100%;
+				padding: 20px;
+				color: #000;
+				font-size: 24px;
+				text-align: center;
+				// background-color: aqua;
+				box-sizing: border-box;
+				overflow-y: auto;
+
+				.experience__item {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					// height: 140px;
+					// background-color: yellow;
+					width: 100%;
+					box-sizing: border-box;
+					padding: 10px;
+					margin-bottom: 20px;
+					border: 1px solid rgb(178, 175, 175);
+					border-radius: 15px;
+
+					&:hover {
+						border: 1px solid #000;
+					}
+
+					.experience__item__header {
+						// background-color: aquamarine;
+						color: #000;
+						text-align: left;
+						// margin-bottom: 10px;
+						padding: 10px 0;
+
+						p {
+							margin: 0;
+							padding: 0;
+						}
+
+						.position {
+							font-size: 18px;
+							font-weight: bold;
+						}
+
+						.company {
+							font-size: 18px;
+							font-weight: 400;
+						}
+
+						.duration {
+							font-size: 16px;
+							font-weight: 400;
+							color: gray;
+						}
+					}
+					.experience__item__body {
+						// background-color: blueviolet;
+						font-size: 16px;
+						text-align: left;
+						font-weight: bolder;
+						padding: 0;
+
+						p {
+							margin: 0;
+							padding: 0;
+							color: gray;
+						}
+					}
+				}
+			}
+		}
+
+		.right__portion {
+			.experience__img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				border-radius: 5%;
+				border: 1px solid gray;
+			}
+		}
+	}
+
+	.contact__content__portion {
+		width: 80%;
+		color: #000;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 60px;
+		justify-content: center;
+		align-items: center;
+
+		.left__portion {
+			.contact__img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				border-radius: 5%;
+				border: 1px solid gray;
+			}
+		}
+
+		.right__portion {
+			.contact__content__portion__details {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+				height: 100%;
+				width: 100%;
+				padding: 20px;
+				color: #fff;
+				font-size: 24px;
+				text-align: center;
+				// background-color: aqua;
 			}
 		}
 	}

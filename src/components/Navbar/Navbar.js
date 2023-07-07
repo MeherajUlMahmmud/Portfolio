@@ -6,16 +6,29 @@ function Navbar() {
 		<div className='navbar'>
 			<div className='navbar__items'>
 				<li>
-					<a href='#'>Home</a>
+					<a href='#home'>
+						<i className='fa fa-home'></i>
+					</a>
 				</li>
 				<li>
-					<a href='#'>About</a>
+					<a href='#profile' className=''>
+						<i className='fa fa-user'></i>
+					</a>
 				</li>
 				<li>
-					<a href='#'>Projects</a>
+					<a href='#skills'>
+						<i className='fa fa-lightbulb'></i>
+					</a>
 				</li>
 				<li>
-					<a href='#'>Contact</a>
+					<a href='#experience'>
+						<i className='fa fa-briefcase'></i>
+					</a>
+				</li>
+				<li>
+					<a href='#contact'>
+						<i className='fa fa-envelope'></i>
+					</a>
 				</li>
 			</div>
 		</div>
