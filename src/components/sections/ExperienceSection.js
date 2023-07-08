@@ -1,4 +1,5 @@
 import React from 'react'
+import { person_images } from '../../constants'
 
 function ExperienceSection() {
 	return (
@@ -32,7 +33,7 @@ function ExperienceSection() {
 						</div>
 					</div>
 					<div className='right__portion'>
-						<img src='https://unsplash.it/500/500' alt='profile' className='experience__img' />
+						<img src={person_images[1]} alt='profile' className='experience__img' />
 					</div>
 				</div>
 			</div>

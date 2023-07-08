@@ -5,8 +5,9 @@ export const images = [
 ]
 
 export const person_images = [
-	require("./assets/images/person-1.svg"),
-	require("./assets/images/person-2.svg"),
+	require("./assets/images/person-1.png"),
+	require("./assets/images/person-2.png"),
+	require("./assets/images/person-3.png"),
 ]
 
 export const projects = [
