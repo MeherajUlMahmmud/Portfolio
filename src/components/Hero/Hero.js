@@ -16,14 +16,9 @@ const Hero = (props) => (
         Meheraj's Portfolio
       </SectionTitle>
       <SectionText style={{ alignItems: "flex-end" }}>
-        I am a Backend Developer with a passion for building web applications
-        and learning new technologies.
+        I am a Software Engineer with a passion for <span style={{ color: "#00adb5" }}>Machine Learning</span> and <span style={{ color: "#00adb5" }}>Web Development</span>.
         <br />
-        I have a strong background in Backend Development and Cross
-        Platform Mobile App Development.
-        <br />
-        I have worked with a wide range of technologies. Currently I am
-        looking for a position in the web development industry.
+        I have a skillset of <span style={{ color: "#00adb5" }}>Frontend Frameworks</span>, <span style={{ color: "#00adb5" }}>Backend Frameworks</span>, <span style={{ color: "#00adb5" }}>Mobile App Frameworks</span>, <span style={{ color: "#00adb5" }}>Artificial Intelligence</span>, <span style={{ color: "#00adb5" }}>Machine Learning</span>, <span style={{ color: "#00adb5" }}>Deep Learning</span>, <span style={{ color: "#00adb5" }}>Computer Vision</span>, and <span style={{ color: "#00adb5" }}>Natural Language Processing</span>
       </SectionText>
       {/* <Button onClick={() => window.location = "https://google.com"}>Leran More</Button> */}
     </LeftSection>

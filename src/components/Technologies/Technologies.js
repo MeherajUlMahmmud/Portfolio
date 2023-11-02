@@ -36,18 +36,27 @@ const Technologies = () => (
 			<ListItem>
 				<DiFirebase size="3rem" />
 				<ListContainer>
-					<ListTitle>Front-end Technologies</ListTitle>
+					<ListTitle>ML/AI Technologies</ListTitle>
 					<ListParagraph>
-						HTML, CSS, SCSS, Bootstrap, React.js, Next.js
+						TensorFlow, Keras, PyTorch, OpenCV, NLTK, NumPy, Pandas, Matplotlib, Scikit-Learn, Selenium, Beautiful Soup, Streamlit
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>
 			<ListItem>
 				<DiFirebase size="3rem" />
 				<ListContainer>
-					<ListTitle>Back-end Technologies</ListTitle>
+					<ListTitle>Frontend Technologies</ListTitle>
 					<ListParagraph>
-						Django, Django REST Framework, Node.js, Express.js
+						React.js, Next.js,Bootstrap, Tailwind CSS, Material UI, Styled Components, REST API, GraphQL, WebSockets
+					</ListParagraph>
+				</ListContainer>
+			</ListItem>
+			<ListItem>
+				<DiFirebase size="3rem" />
+				<ListContainer>
+					<ListTitle>Backend Technologies</ListTitle>
+					<ListParagraph>
+						Django, Django REST Framework, Flask, FastAPI, Node.js, Express.js, Spring Boot, Microservices, GraphQL, WebSockets
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>
@@ -74,7 +83,7 @@ const Technologies = () => (
 				<ListContainer>
 					<ListTitle>Misc</ListTitle>
 					<ListParagraph>
-						Adobe XD, Git, GitHub, Heroku, LaTeX, Oracle Apex
+						Git, GitHub, Heroku, AWS, GCP, LaTeX, Oracle Apex
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>

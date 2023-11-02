@@ -35,8 +35,8 @@ const Timeline = () => {
 		if (carouselRef.current) {
 			const scrollLeft = Math.floor(
 				carouselRef.current.scrollWidth *
-					0.7 *
-					(i / TimeLineData.length)
+				0.7 *
+				(i / TimeLineData.length)
 			);
 
 			scroll(carouselRef.current, scrollLeft);
@@ -48,7 +48,7 @@ const Timeline = () => {
 			const index = Math.round(
 				(carouselRef.current.scrollLeft /
 					(carouselRef.current.scrollWidth * 0.7)) *
-					TimeLineData.length
+				TimeLineData.length
 			);
 
 			setActiveItem(index);
@@ -72,14 +72,13 @@ const Timeline = () => {
 			<br />
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>
-				I am a CS Graduate with a passion for Software Engineering, and
-				Artificial Intelligence.
+				As a dedicated software engineer with expertise in <span style={{
+					color: "#00FFFF"
+				}}>Python, Django, AI, and ML </span>projects, I thrive on turning complex challenges into elegant solutions. My passion for innovation and technology drives my work, whether I'm designing intelligent algorithms or building efficient, user-friendly applications.
 				<br />
-				I have a background in both front-end and back-end development,
-				and I have a decent level of knowledge on Machine Learning,
-				Image Processing, and Data Science.
-				<br />I am a self-taught developer, and I am always looking to
-				learn new skills and technologies.
+				With a background in <span style={{
+					color: "#00FFFF"
+				}}>Java, Spring Boot, and Microservices</span>, I bring a diverse skill set to the table, ensuring that I'm ready to tackle any project that comes my way. I am committed to pushing the boundaries of what's possible in the digital world and am always eager to take on new opportunities and challenges in the ever-evolving tech landscape.
 			</SectionText>
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>

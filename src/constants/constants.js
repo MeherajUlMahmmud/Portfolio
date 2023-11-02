@@ -1,21 +1,39 @@
 export const projects = [
 	{
-		title: "JobLand",
+		title: "Pristine Facilities",
 		description:
-			"Using Django in the backend, and HTML, CSS in the frontend I bult this project as a University term-project. This is a Job Portal where employers post about the empty positions in their organizations, and applicants apply for any position they see fit.",
-		image: "/images/Jobland.png",
-		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
-		source: "https://github.com/MeherajUlMahmmud/JobLand",
-		visit: "https://jobland-django.herokuapp.com/",
+			"Pristine Facilities is a Cleaning Service Provider Company. This is a full-stack web application built with React.js, Django REST Framework, and PostgreSQL.",
+		image: "/images/PristineFacilities.png",
+		tags: ["React.js", "Django", "PostgreSQL"],
+		// source: "https://github.com/MeherajUlMahmmud/JobLand",
+		visit: "https://www.pristinefacilities.au/",
+	},
+	{
+		title: "Face Liveness Detection",
+		description:
+			"Face Liveness Detection is a system to detect whether a face is real or fake and can be used in various security systems to prevent frauds. This system is built with Python and OpenCV. It utilizes a CNN model trained with over 10,000 images of real and fake faces.",
+		image: "/images/FLD.png",
+		tags: ["Python", "OpenCV", "TensorFlow", "CNN"],
+		// source: "https://github.com/MeherajUlMahmmud/JobLand",
+		// visit: "https://jobland-django.herokuapp.com/",
+	},
+	{
+		title: "Template-based OCR",
+		description:
+			"Template-based OCR can be used to extract information from a document with a fixed template. This system is built with Python, OpenCV, YOLO, and Tesseract. It utilizes a YOLO model to detect the template and Tesseract to extract information from the detected template.",
+		image: "/images/OCR.png",
+		tags: ["Python", "OpenCV", "YOLO", "Tesseract"],
+		// source: "https://github.com/MeherajUlMahmmud/JobLand",
+		// visit: "https://jobland-django.herokuapp.com/",
 	},
 	{
 		title: "AMIC",
 		description:
-			"This is a Cloud based Health care System built with Django. This system provides services i.e. Doctors’ Appointment, Emergency Services (Blood Donation, Plasma Donation), Health Advisor, Blog",
+			"This is a Cloud based Health Care System built with Django. This system provides services i.e. Doctors’ Appointment, Emergency Services (Blood Donation, Plasma Donation), Health Advisor, Blog",
 		image: "/images/AMIC.png",
 		tags: ["Django", "HTML-CSS-JS", "PostgreSQL"],
-		source: "https://github.com/MeherajUlMahmmud/AMIC-v2.0",
-		visit: "https://amic-django.herokuapp.com/",
+		source: "https://github.com/MeherajUlMahmmud/AMIC",
+		// visit: "https://amic-django.herokuapp.com/",
 	},
 	// {
 	// 	title: "DevBlog",
@@ -26,28 +44,28 @@ export const projects = [
 	// 	source: "https://github.com/MeherajUlMahmmud/DevBlog",
 	// 	visit: "https://devblog-234.herokuapp.com/",
 	// },
-	{
-		title: "iShkool",
-		description:
-			"This is an education platform built with React.js and  framework. This is one of the professional projects I have built as a Junior Software Engineer.",
-		image: "/images/iShkool.png",
-		tags: ["React.js", "Node.js", "PostgreSQL"],
-		source: "#",
-		visit: "https://www.ishkool.org/",
-	},
-	{
-		title: "BetNow",
-		description:
-			"This is a Betting platform built with React.js and Node.js. This is one of the most complex projects I have built so far.",
-		credentials: {
-			username: "Username: admin",
-			password: "Password: 123456",
-		},
-		image: "/images/BetNow.png",
-		tags: ["React.js", "Node.js", "PostgreSQL"],
-		source: "#",
-		visit: "https://betnow-client.herokuapp.com/",
-	},
+	// {
+	// 	title: "iShkool",
+	// 	description:
+	// 		"This is an education platform built with React.js and  framework. This is one of the professional projects I have built as a Junior Software Engineer.",
+	// 	image: "/images/iShkool.png",
+	// 	tags: ["React.js", "Node.js", "PostgreSQL"],
+	// 	source: "#",
+	// 	visit: "https://www.ishkool.org/",
+	// },
+	// {
+	// 	title: "BetNow",
+	// 	description:
+	// 		"This is a Betting platform built with React.js and Node.js. This is one of the most complex projects I have built so far.",
+	// 	credentials: {
+	// 		username: "Username: admin",
+	// 		password: "Password: 123456",
+	// 	},
+	// 	image: "/images/BetNow.png",
+	// 	tags: ["React.js", "Node.js", "PostgreSQL"],
+	// 	source: "#",
+	// 	visit: "https://betnow-client.herokuapp.com/",
+	// },
 	// {
 	// 	title: "EasyAd",
 	// 	description:
@@ -57,23 +75,23 @@ export const projects = [
 	// 	source: "https://github.com/MeherajUlMahmmud/EasyAd",
 	// 	visit: "https://easyad-bd.herokuapp.com/",
 	// },
+	// {
+	// 	title: "Rokto Lagbe",
+	// 	description:
+	// 		"This is a Blood Donation App where users can register using Google accounts and request for blood if neccessary. Users can view a list of all available donors in the platform.",
+	// 	image: "/images/4.png",
+	// 	tags: ["Android", "Java", "Firebase"],
+	// 	source: "https://github.com/MeherajUlMahmmud/BloodDonationFirebase",
+	// 	// visit: "#",
+	// },
 	{
-		title: "Rokto Lagbe",
-		description:
-			"This is a Blood Donation App where users can register using Google accounts and request for blood if neccessary. Users can view a list of all available donors in the platform.",
-		image: "/images/4.png",
-		tags: ["Android", "Java", "Firebase"],
-		source: "https://github.com/MeherajUlMahmmud/BloodDonationFirebase",
-		visit: "#",
-	},
-	{
-		title: "Restaurant App",
+		title: "Crust-N-Bunz",
 		description:
 			"This is a restaurant app built with Google's Flutter Framework for a certain restaurant following their company policy. It uses a Django API as backend and SQLite as Database.",
 		image: "/images/5.png",
 		tags: ["Flutter", "Django REST Framework", "SQLite"],
-		source: "https://github.com/MeherajUlMahmmud/Crust-and-Bunz/tree/master/mobile_app",
-		visit: "#",
+		source: "https://github.com/MeherajUlMahmmud/CrustNBunz-App",
+		// visit: "#",
 	},
 ];
 
@@ -109,18 +127,30 @@ export const TimeLineData = [
 		year: 2018,
 		text: "Started my B.Sc. in Computer Science & Engineering at East West University",
 	},
-	{
-		year: 2019,
-		text: "Awarded Medha Lalon Scholarship in the session of 2019-2021",
-	},
-	{
-		year: 2021,
-		text: "Awarded Dean's List Scholarship in the session of 2021-2022",
-	},
-	{ year: 2021, text: "Started Freelance Web and Mobile App Development" },
+	// {
+	// 	year: 2019,
+	// 	text: "Awarded Medha Lalon Scholarship in the session of 2019-2021",
+	// },
+	// {
+	// 	year: 2021,
+	// 	text: "Awarded Dean's List Scholarship in the session of 2021-2022",
+	// },
+	// { year: 2021, text: "Started Freelance Web and Mobile App Development" },
 	{ year: 2021, text: "Appointed as an Undergraduate Teaching Assistant" },
 	{
 		year: 2021,
 		text: "Appointed as a Junior Software Engineer at ZeroInv",
+	},
+	{
+		year: 2022,
+		text: "Completed my Bachelor's Degree in Computer Science & Engineering",
+	},
+	{
+		year: 2023,
+		text: "Appointed as a Software Engineer at Mirailit Ltd.",
+	},
+	{
+		year: 2023,
+		text: "Appointed as a Software Engineer at A Reputed Private Bank in Bangladesh.",
 	},
 ];
