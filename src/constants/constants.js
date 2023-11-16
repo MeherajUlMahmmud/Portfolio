@@ -1,12 +1,12 @@
 export const projects = [
 	{
-		title: "Pristine Facilities",
+		title: "Shining Services",
 		description:
-			"Pristine Facilities is a Cleaning Service Provider Company. This is a full-stack web application built with React.js, Django REST Framework, and PostgreSQL.",
-		image: "/images/PristineFacilities.png",
+			"Shining Services is a Cleaning Service Provider Company. This is a full-stack web application built with React.js, Django REST Framework, and PostgreSQL.",
+		image: "/images/ShiningServices.png",
 		tags: ["React.js", "Django", "PostgreSQL"],
 		// source: "https://github.com/MeherajUlMahmmud/JobLand",
-		visit: "https://www.pristinefacilities.au/",
+		visit: "https://www.shiningservices.com.au/",
 	},
 	{
 		title: "Face Liveness Detection",
@@ -91,6 +91,14 @@ export const projects = [
 		image: "/images/5.png",
 		tags: ["Flutter", "Django REST Framework", "SQLite"],
 		source: "https://github.com/MeherajUlMahmmud/CrustNBunz-App",
+		// visit: "#",
+	},
+	{
+		title: "GoCV",
+		description:
+			"This is a resume builder app built with Google's Flutter Framework. It uses a Django API as backend and SQLite as Database.",
+		tags: ["Flutter", "Django REST Framework", "SQLite"],
+		source: "https://github.com/MeherajUlMahmmud/GoCV",
 		// visit: "#",
 	},
 ];
