@@ -209,7 +209,6 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Firebase', 'FCM', 'OpenStreetMap'],
     year: '2025',
-    source: 'https://github.com/meharaj-007/findr',
     featured: true,
   },
   {
@@ -219,7 +218,6 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Dart'],
     year: '2025',
-    source: 'https://github.com/meharaj-007/Pomodoro-App',
   },
   {
     title: 'GoCV',
@@ -288,7 +286,6 @@ export const projects: Project[] = [
     category: 'Full-stack',
     tech: ['Django', 'PostgreSQL'],
     year: '2021',
-    source: 'https://github.com/meharaj-007/AMIC',
   },
   {
     title: 'Algorithm Visualizers',
