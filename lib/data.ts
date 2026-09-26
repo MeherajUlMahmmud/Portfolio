@@ -84,8 +84,8 @@ export const experience: Experience[] = [
       {
         title: 'Cross-Border Transaction Automation',
         points: [
-          'SWIFT MT940/MT103 parsing, matching and rule-based classification, cutting reconciliation from hours to minutes and removing 90%+ of manual effort.',
-          'Led migration from legacy MT103 to ISO 20022 PACS.008 for cross-border payment compliance.',
+          'SWIFT MT103, MT940, MT950, MT942 and MT910 parsing, matching and rule-based classification, reconciling statements and credit confirmations against payment instructions. Cut reconciliation from hours to minutes and removed 90%+ of manual effort.',
+          'Led migration from legacy MT103 to ISO 20022 pacs.008 for cross-border payment compliance.',
         ],
       },
     ],
@@ -109,8 +109,8 @@ export const experience: Experience[] = [
       {
         title: 'Enterprise Captcha Generation Service',
         points: [
-          'REST API for dynamic captchas with configurable complexity, distortion and character sets.',
-          'Rolled out across 15+ banking platforms, reducing automated bot attacks by 85%.',
+          'REST API for dynamic captchas with multi-level complexity, configurable distortion and character sets.',
+          'Load-balanced and serving 15+ customer-facing and internal banking systems at under 30ms per response, cutting automated bot attacks by 85%.',
         ],
       },
     ],
@@ -183,16 +183,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: 'BD NID OCR',
-    description:
-      'Reads Bangladeshi national ID cards: YOLOv8 locates each field, then Tesseract, PaddleOCR and EasyOCR extract the text behind a Django web interface.',
-    category: 'AI / ML',
-    tech: ['YOLOv8', 'PaddleOCR', 'EasyOCR', 'Tesseract', 'Django'],
-    year: '2023',
-    source: 'https://github.com/meharaj-007/BD-NID-OCR',
-    featured: true,
-  },
-  {
     title: 'Data Profiler',
     description:
       'Python library that turns a pandas DataFrame into a quality report: completeness, types, statistics, correlations and plots, exported as a Word document.',
@@ -203,31 +193,12 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: 'Findr',
-    description:
-      'Real-time location sharing in private rooms joined by 8-character codes, with admin controls, per-room sharing toggle, OpenStreetMap and push notifications.',
-    category: 'Mobile',
-    tech: ['Flutter', 'Firebase', 'FCM', 'OpenStreetMap'],
-    year: '2025',
-    featured: true,
-  },
-  {
     title: 'Pomodoro',
     description:
       'Focus timer with task management, session history, productivity charts, streaks and achievements.',
     category: 'Mobile',
     tech: ['Flutter', 'Dart'],
     year: '2025',
-  },
-  {
-    title: 'GoCV',
-    description:
-      'Resume builder app for creating and managing resumes on the go, backed by a Django REST API shared with JobBoard. My most-starred repository.',
-    category: 'Mobile',
-    tech: ['Flutter', 'Django REST'],
-    year: '2024',
-    source: 'https://github.com/meharaj-007/GoCV',
-    featured: true,
   },
   {
     title: 'JobBoard',
