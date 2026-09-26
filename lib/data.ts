@@ -138,7 +138,15 @@ export const experience: Experience[] = [
 
 export type ProjectCategory = 'AI / ML' | 'Full-stack' | 'Mobile' | 'Tools'
 
-export type Screenshot = { src: string; alt: string; width: number; height: number }
+export type Media = {
+  type?: 'image' | 'video'
+  src: string
+  alt: string
+  width: number
+  height: number
+  /** Still frame shown before a video plays. */
+  poster?: string
+}
 
 export type Project = {
   title: string
@@ -151,7 +159,7 @@ export type Project = {
   status?: string
   featured?: boolean
   /** The first is the card's cover; all open full size on click. */
-  screenshots?: Screenshot[]
+  media?: Media[]
 }
 
 export const projects: Project[] = [
@@ -186,7 +194,15 @@ export const projects: Project[] = [
     source: 'https://github.com/meharaj-007/bkash-analyzer',
     live: 'https://meharaj-007.github.io/bkash-analyzer/',
     featured: true,
-    screenshots: [
+    media: [
+      {
+        type: 'video',
+        src: '/projects/bkash-walkthrough.mp4',
+        poster: '/projects/bkash-walkthrough-poster.jpg',
+        alt: 'Walkthrough: loading the sample statement, the dashboard and exporting to CSV or JSON',
+        width: 1280,
+        height: 720,
+      },
       { src: '/projects/bkash-overview.png', alt: 'Dashboard overview: net position, money in and out, fees and insights', width: 1280, height: 800 },
       { src: '/projects/bkash-charts.png', alt: 'Balance over time and money in versus money out by month', width: 1280, height: 800 },
       { src: '/projects/bkash-breakdown.png', alt: 'Where the money goes, where it comes from, top recipients and fees', width: 1280, height: 800 },
