@@ -21,7 +21,7 @@ export const profile = {
 }
 
 export const socials = {
-  github: 'https://github.com/MeherajUlMahmmud',
+  github: 'https://github.com/meharaj-007',
   linkedin: 'https://www.linkedin.com/in/meherajulmahmmud/',
   medium: 'https://meheraj.medium.com/',
 }
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     category: 'AI / ML',
     tech: ['TypeScript', 'Electron', 'Django', 'DRF', 'LLM agents'],
     year: '2026',
-    source: 'https://github.com/MeherajUlMahmmud/photon',
+    source: 'https://github.com/meharaj-007/photon',
     status: 'In progress',
     featured: true,
   },
@@ -179,7 +179,7 @@ export const projects: Project[] = [
     category: 'AI / ML',
     tech: ['Python', 'Flask', 'GroqCloud Vision', 'React', 'Tailwind'],
     year: '2026',
-    source: 'https://github.com/MeherajUlMahmmud/bank-statement-parser',
+    source: 'https://github.com/meharaj-007/bank-statement-parser',
     featured: true,
   },
   {
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     category: 'AI / ML',
     tech: ['YOLOv8', 'PaddleOCR', 'EasyOCR', 'Tesseract', 'Django'],
     year: '2023',
-    source: 'https://github.com/MeherajUlMahmmud/BD-NID-OCR',
+    source: 'https://github.com/meharaj-007/BD-NID-OCR',
     featured: true,
   },
   {
@@ -199,7 +199,7 @@ export const projects: Project[] = [
     category: 'Tools',
     tech: ['Python', 'pandas', 'matplotlib', 'python-docx'],
     year: '2025',
-    source: 'https://github.com/MeherajUlMahmmud/Data-Profiling',
+    source: 'https://github.com/meharaj-007/Data-Profiling',
     featured: true,
   },
   {
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Firebase', 'FCM', 'OpenStreetMap'],
     year: '2025',
-    source: 'https://github.com/MeherajUlMahmmud/findr',
+    source: 'https://github.com/meharaj-007/findr',
     featured: true,
   },
   {
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Dart'],
     year: '2025',
-    source: 'https://github.com/MeherajUlMahmmud/Pomodoro-App',
+    source: 'https://github.com/meharaj-007/Pomodoro-App',
   },
   {
     title: 'GoCV',
@@ -228,7 +228,7 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Django REST'],
     year: '2024',
-    source: 'https://github.com/MeherajUlMahmmud/GoCV',
+    source: 'https://github.com/meharaj-007/GoCV',
     featured: true,
   },
   {
@@ -237,7 +237,7 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Django REST'],
     year: '2024',
-    source: 'https://github.com/MeherajUlMahmmud/JobBoard',
+    source: 'https://github.com/meharaj-007/JobBoard',
   },
   {
     title: 'Shining Services',
@@ -253,7 +253,7 @@ export const projects: Project[] = [
     category: 'Tools',
     tech: ['JavaScript', 'Chrome Extension'],
     year: '2023',
-    source: 'https://github.com/MeherajUlMahmmud/Browsing-History-Extension',
+    source: 'https://github.com/meharaj-007/Browsing-History-Extension',
   },
   {
     title: 'JobLand',
@@ -262,7 +262,7 @@ export const projects: Project[] = [
     category: 'Full-stack',
     tech: ['Django', 'PostgreSQL'],
     year: '2021',
-    source: 'https://github.com/MeherajUlMahmmud/JobLand',
+    source: 'https://github.com/meharaj-007/JobLand',
   },
   {
     title: 'Farmers Activity Prediction',
@@ -271,7 +271,7 @@ export const projects: Project[] = [
     category: 'AI / ML',
     tech: ['Pose estimation', 'Django REST', 'Flutter'],
     year: '2022',
-    source: 'https://github.com/MeherajUlMahmmud/Farmers-Activity-Prediction',
+    source: 'https://github.com/meharaj-007/Farmers-Activity-Prediction',
   },
   {
     title: 'PLOMS',
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     category: 'Full-stack',
     tech: ['React', 'Node.js', 'Python', 'OpenCV'],
     year: '2022',
-    source: 'https://github.com/MeherajUlMahmmud/PLOMS-Client',
+    source: 'https://github.com/meharaj-007/PLOMS-Client',
   },
   {
     title: 'AMIC',
@@ -288,7 +288,7 @@ export const projects: Project[] = [
     category: 'Full-stack',
     tech: ['Django', 'PostgreSQL'],
     year: '2021',
-    source: 'https://github.com/MeherajUlMahmmud/AMIC',
+    source: 'https://github.com/meharaj-007/AMIC',
   },
   {
     title: 'Algorithm Visualizers',
@@ -296,7 +296,7 @@ export const projects: Project[] = [
     category: 'Tools',
     tech: ['JavaScript', 'p5.js'],
     year: '2021',
-    source: 'https://github.com/MeherajUlMahmmud/Sort-Viz',
+    source: 'https://github.com/meharaj-007/Sort-Viz',
     live: 'https://a-star-visu.netlify.app',
   },
 ]
