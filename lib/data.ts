@@ -163,6 +163,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'oss-clarity',
+    description:
+      'Open-source, self-hosted session replay and heatmaps for Django. Text is masked in the browser and no IP addresses are stored; 15 documented rules flag rage clicks, dead clicks and form abandons for review in Django admin.',
+    category: 'Tools',
+    tech: ['Django', 'TypeScript', 'rrweb', 'Celery', 'PostgreSQL'],
+    year: '2026',
+    source: 'https://github.com/meharaj-007/oss-clarity',
+    featured: true,
+  },
+  {
     title: 'Bank Statement Parser',
     description:
       'Extracts transactions from PDF bank statements of any layout using vision LLMs. Pages are processed in parallel, validated with Pydantic and returned with confidence scores and token-cost tracking.',
