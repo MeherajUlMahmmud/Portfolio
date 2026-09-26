@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Personal portfolio of Meharaj Ul Mahmmud: [meheraj.netlify.app](https://meheraj.netlify.app/).
 
-First, run the development server:
+A single-page, fully static site that follows the system light/dark theme.
+
+## Tech stack
+
+- [Next.js 16](https://nextjs.org/) (App Router) and React 19
+- TypeScript
+- [Tailwind CSS v4](https://tailwindcss.com/) (theme configured in CSS, no `tailwind.config.ts`)
+- [lucide-react](https://lucide.dev/) and [react-icons](https://react-icons.github.io/react-icons/) for icons
+
+## Getting started
+
+Requires Node.js 20 or later.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | What it does                          |
+| --------------- | ------------------------------------- |
+| `npm run dev`   | Start the dev server with hot reload  |
+| `npm run build` | Build the production bundle           |
+| `npm run start` | Serve the production build locally    |
+| `npm run lint`  | Run ESLint                            |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+app/
+  layout.tsx        Root layout, fonts and SEO metadata
+  page.tsx          Composes the page from the section components
+  globals.css       Theme tokens (colours, fonts) and base styles
+components/
+  layout/           Header, Footer and the page shell
+  sections/         Hero, About, Experience, Projects, Skills, Education, Publications, Contact
+  ui/               Shared primitives: Badge, Button, Card, Section
+lib/
+  data.ts           All site content
+public/
+  resume.pdf        Downloadable résumé
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Updating content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All content (profile, experience, projects, skills, education, publications, articles) lives in [`lib/data.ts`](lib/data.ts). Components in `components/sections` only render it, so most updates never touch a component.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Add a project:** append to `projects`. Set `featured: true` to show it under the default "Featured" filter.
+- **Add a job:** prepend to `experience`. Mark the current role with `current: true`.
+- **Update the résumé:** replace `public/resume.pdf`.
+- **Colours and fonts:** edit the tokens at the top of [`app/globals.css`](app/globals.css).
 
-## Deploy on Vercel
+## Build and deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The whole site prerenders as static content (`○ /` in the build output), so it deploys to Netlify or Vercel with the default Next.js settings.

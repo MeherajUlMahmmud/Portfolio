@@ -1,35 +1,51 @@
-import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { profile } from '@/lib/data'
+import './globals.css'
 
-const spaceMono = Space_Mono({
-  weight: ['400', '700'],
-  subsets: ["latin"],
-  variable: "--font-neubrutalism",
-});
+const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
+const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
+
+const description =
+  'Software Engineer building LLM, RAG, OCR and fraud-detection systems in banking. 4+ years with Python, Java, Django, Spring Boot and React.'
 
 export const metadata: Metadata = {
-  title: "Meharaj Ul Mahmmud - Software Engineer",
-  description: "Portfolio of Meharaj Ul Mahmmud - Software Engineer specializing in AI/ML and banking technology with 3+ years of experience.",
-  keywords: ["Software Engineer", "AI/ML", "Banking Technology", "Python", "Java", "React", "Next.js"],
-  authors: [{ name: "Meharaj Ul Mahmmud" }],
+  metadataBase: new URL(profile.siteUrl),
+  title: `${profile.name} | Software Engineer, AI/ML`,
+  description,
+  keywords: ['Software Engineer', 'AI/ML', 'LLM', 'RAG', 'OCR', 'Fraud Detection', 'Banking Technology', 'Python', 'Java', 'Django', 'React', 'Next.js', 'Flutter'],
+  authors: [{ name: profile.name, url: profile.siteUrl }],
   openGraph: {
-    title: "Meharaj Ul Mahmmud - Software Engineer",
-    description: "Portfolio of Meharaj Ul Mahmmud - Software Engineer specializing in AI/ML and banking technology",
-    type: "website",
+    title: `${profile.name} | Software Engineer, AI/ML`,
+    description,
+    url: profile.siteUrl,
+    siteName: profile.name,
+    type: 'website',
   },
-};
+  twitter: {
+    card: 'summary',
+    title: `${profile.name} | Software Engineer, AI/ML`,
+    description,
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#fbfaf7' },
+    { media: '(prefers-color-scheme: dark)', color: '#0e1014' },
+  ],
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
-  );
+  )
 }
