@@ -1,123 +1,74 @@
-import Card from '@/components/ui/Card'
+import Section from '@/components/ui/Section'
 import Badge from '@/components/ui/Badge'
+import Card from '@/components/ui/Card'
+import { education, achievements, earlierEducation } from '@/lib/data'
 
 export default function Education() {
-  const education = [
-    {
-      degree: "Bachelor of Science in Computer Science and Engineering",
-      institution: "East West University",
-      location: "Dhaka, Bangladesh",
-      period: "April 2018 - May 2022",
-      specialization: "Data Science and Artificial Intelligence",
-      cgpa: "3.64/4.00 (Dean's List Recognition)",
-      coursework: ["Machine Learning", "Data Mining", "Algorithm Design", "Database Systems", "Software Engineering"]
-    },
-    {
-      degree: "Higher Secondary School Certificate",
-      institution: "Al-Haz Noor Mia Degree College",
-      location: "Cumilla, Bangladesh",
-      period: "April 2015 - April 2017",
-      group: "Science",
-      gpa: "4.00/5.00"
-    },
-    {
-      degree: "Secondary School Certificate",
-      institution: "Senbag Govt. Pilot High School",
-      location: "Noakhali, Bangladesh",
-      period: "2015",
-      group: "Science",
-      gpa: "5.00/5.00"
-    }
-  ]
-
   return (
-    <section id="education" className="py-20 bg-background-alt">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
-            Education
-          </h2>
-          <div className="w-20 h-1 bg-accent mx-auto"></div>
-        </div>
+    <Section id="education" eyebrow="Education" title="Education & recognition">
+      <div className="grid gap-6 lg:grid-cols-5">
+        <Card className="lg:col-span-3">
+          <p className="font-mono text-sm text-muted">{education.period}</p>
+          <h3 className="mt-2 text-xl font-semibold text-fg">{education.degree}</h3>
+          <p className="mt-1 text-muted">
+            {education.institution} · {education.location}
+          </p>
 
-        <div className="max-w-4xl mx-auto">
-          {/* Timeline Container */}
-          <div className="relative">
-            {/* Timeline Line - Left aligned */}
-            <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-border"></div>
+          <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div>
+              <dt className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Specialization</dt>
+              <dd className="mt-1 text-fg">{education.specialization}</dd>
+            </div>
+            <div>
+              <dt className="font-mono text-xs uppercase tracking-[0.2em] text-muted">CGPA</dt>
+              <dd className="mt-1 text-fg">{education.cgpa}</dd>
+            </div>
+          </dl>
 
-            {education.map((edu, index) => (
-              <div key={index} className="relative mb-12 last:mb-0">
-                {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-8 transform -translate-x-1/2">
-                  <div className="w-4 h-4 rounded-full bg-accent border-4 border-white shadow-medium"></div>
-                </div>
-
-                {/* Content */}
-                <div className="ml-12 md:ml-20">
-                  <Card variant="elevated">
-                    {/* Period Badge */}
-                    <div className="inline-block mb-4">
-                      <span className="px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold">
-                        {edu.period}
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl font-serif font-bold text-primary mb-2">
-                      {edu.degree}
-                    </h3>
-                    <p className="text-lg text-secondary mb-1 font-medium">{edu.institution}</p>
-                    <p className="text-sm text-secondary mb-4">{edu.location}</p>
-
-                    {edu.specialization && (
-                      <div className="mb-3 p-3 bg-background-alt rounded-lg">
-                        <p className="text-secondary">
-                          <span className="font-semibold text-primary">Specialization:</span> {edu.specialization}
-                        </p>
-                      </div>
-                    )}
-
-                    {edu.group && (
-                      <div className="mb-3 p-3 bg-background-alt rounded-lg">
-                        <p className="text-secondary">
-                          <span className="font-semibold text-primary">Group:</span> {edu.group}
-                        </p>
-                      </div>
-                    )}
-
-                    {edu.cgpa && (
-                      <div className="mb-4">
-                        <span className="inline-block px-4 py-2 bg-accent text-white rounded-lg font-semibold">
-                          CGPA: {edu.cgpa}
-                        </span>
-                      </div>
-                    )}
-
-                    {edu.gpa && (
-                      <div className="mb-4">
-                        <span className="inline-block px-4 py-2 bg-accent text-white rounded-lg font-semibold">
-                          GPA: {edu.gpa}
-                        </span>
-                      </div>
-                    )}
-
-                    {edu.coursework && (
-                      <div className="mt-4 pt-4 border-t border-border">
-                        <p className="font-semibold text-primary mb-3">Relevant Coursework</p>
-                        <div className="flex flex-wrap gap-2">
-                          {edu.coursework.map((course, idx) => (
-                            <Badge key={idx}>{course}</Badge>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </Card>
-                </div>
-              </div>
-            ))}
+          <div className="mt-6 border-t border-border pt-5">
+            <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted">Relevant coursework</p>
+            <div className="flex flex-wrap gap-1.5">
+              {education.coursework.map((c) => (
+                <Badge key={c}>{c}</Badge>
+              ))}
+            </div>
           </div>
+        </Card>
+
+        <div className="space-y-6 lg:col-span-2">
+          <Card>
+            <h3 className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-accent">Recognition</h3>
+            <ul className="space-y-4">
+              {achievements.map((a) => (
+                <li key={a.title} className="flex gap-4">
+                  <span className="w-16 shrink-0 font-mono text-sm text-muted">{a.year}</span>
+                  <div>
+                    <p className="font-medium text-fg">{a.title}</p>
+                    <p className="text-sm text-muted">{a.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Card>
+
+          <Card>
+            <h3 className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-accent">School</h3>
+            <ul className="space-y-4">
+              {earlierEducation.map((e) => (
+                <li key={e.title} className="flex gap-4">
+                  <span className="w-16 shrink-0 font-mono text-sm text-muted">{e.year}</span>
+                  <div>
+                    <p className="font-medium text-fg">
+                      {e.title} <span className="font-normal text-muted">· {e.result}</span>
+                    </p>
+                    <p className="text-sm text-muted">{e.institution}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Card>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

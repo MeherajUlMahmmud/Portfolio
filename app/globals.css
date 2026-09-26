@@ -1,27 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* Colour tokens. Tailwind v4 reads theme values from CSS, not tailwind.config.ts. */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background: #ffffff;
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --surface-alt: #f3f1ec;
+  --fg: #16181d;
+  --muted: #5b606b;
+  --border: #e4e1da;
+  --accent: #2346d6;
+  --accent-soft: #e8ecfc;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--background);
-  font-family: 'Inter', sans-serif;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1014;
+    --surface: #15181e;
+    --surface-alt: #1b1f27;
+    --fg: #eceef2;
+    --muted: #9aa1ae;
+    --border: #272c36;
+    --accent: #7d95ff;
+    --accent-soft: #1d2440;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  color-scheme: light dark;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+body {
+  background: var(--bg);
+  color: var(--fg);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

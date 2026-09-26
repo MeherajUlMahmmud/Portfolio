@@ -2,22 +2,17 @@ import { ReactNode } from 'react'
 
 interface BadgeProps {
   children: ReactNode
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'outline'
 }
 
-export default function Badge({ children, variant = 'primary' }: BadgeProps) {
-  const baseClasses = "px-3 py-1 rounded-full text-sm font-medium inline-block"
-
+export default function Badge({ children, variant = 'outline' }: BadgeProps) {
   const variantClasses = {
-    primary: "bg-accent/10 text-accent",
-    secondary: "bg-background-dark text-secondary",
-    outline: "border border-border text-secondary"
+    primary: 'bg-accent-soft text-accent',
+    outline: 'border border-border text-muted',
   }
 
-  const classes = `${baseClasses} ${variantClasses[variant]}`
-
   return (
-    <span className={classes}>
+    <span className={`inline-block rounded-md px-2 py-0.5 font-mono text-xs ${variantClasses[variant]}`}>
       {children}
     </span>
   )
