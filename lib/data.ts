@@ -10,7 +10,7 @@ export const profile = {
   phone: '+880 1814-325624',
   siteUrl: 'https://meheraj.netlify.app',
   resumeUrl: '/resume.pdf',
-  headline: 'I build LLM, OCR and fraud-detection systems that take manual work out of banking.',
+  headline: 'I build LLM, OCR and fraud-detection systems that take manual work out.',
   summary:
     'Software Engineer with 4+ years of experience in machine learning and backend systems. At Dutch-Bangla Bank PLC I lead R&D on LLMs, RAG and document AI, and ship production systems for fraud detection, credit assessment and cross-border payments. Outside work I build full-stack AI apps, Flutter apps and developer tools.',
   currently: [
@@ -109,7 +109,7 @@ export const experience: Experience[] = [
       {
         title: 'Enterprise Captcha Generation Service',
         points: [
-          'REST API for dynamic captchas with multi-level complexity, configurable distortion and character sets.',
+          'REST API for dynamic captchas with multi-level pattern complexity, configurable distortion levels and character sets.',
           'Load-balanced and serving 15+ customer-facing and internal banking systems at under 30ms per response, cutting automated bot attacks by 85%.',
         ],
       },
