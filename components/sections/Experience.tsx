@@ -7,7 +7,7 @@ export default function Experience() {
     <Section id="experience" eyebrow="Experience" title="Where I've worked" className="bg-surface-alt">
       <ol className="relative space-y-12 border-l border-border pl-6 md:pl-10">
         {experience.map((job) => (
-          <li key={`${job.company}-${job.role}`} className="relative">
+          <li key={`${job.company}-${job.role}`} className="reveal relative">
             <span
               className={`absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-surface-alt md:-left-[47px] ${
                 job.current ? 'bg-accent' : 'bg-muted'

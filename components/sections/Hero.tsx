@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60 motion-reduce:hidden" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
-          Senior Officer, AI/ML R&amp;D at Dutch-Bangla Bank
+          {profile.status}
         </p>
 
         <h1 className="max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-fg sm:text-5xl md:text-6xl">

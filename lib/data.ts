@@ -4,6 +4,7 @@ export const profile = {
   name: 'Meharaj Ul Mahmmud',
   shortName: 'Meharaj',
   role: 'Software Engineer · AI/ML',
+  status: 'Senior Officer, AI/ML R&D at Dutch-Bangla Bank',
   location: 'Dhaka, Bangladesh',
   email: 'meharajulmahmmud@gmail.com',
   phone: '+880 1814-325624',
