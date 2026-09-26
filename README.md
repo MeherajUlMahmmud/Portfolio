@@ -9,7 +9,7 @@ A single-page, fully static site that follows the system light/dark theme.
 - [Next.js 16](https://nextjs.org/) (App Router) and React 19
 - TypeScript
 - [Tailwind CSS v4](https://tailwindcss.com/) (theme configured in CSS, no `tailwind.config.ts`)
-- [lucide-react](https://lucide.dev/) and [react-icons](https://react-icons.github.io/react-icons/) for icons
+- [react-icons](https://react-icons.github.io/react-icons/) for icons
 
 ## Getting started
 
@@ -36,6 +36,8 @@ app/
   layout.tsx        Root layout, fonts and SEO metadata
   page.tsx          Composes the page from the section components
   globals.css       Theme tokens (colours, fonts) and base styles
+  opengraph-image.tsx  Social preview card, rendered at build time
+  robots.ts, sitemap.ts  Crawler files generated from lib/data.ts
 components/
   layout/           Header, Footer and the page shell
   sections/         Hero, About, Experience, Projects, Skills, Education, Publications, Contact

@@ -25,7 +25,7 @@ export default function Projects() {
       title="Things I've built"
       intro="Side projects and freelance work: AI agents, document AI, full-stack apps and Flutter apps. Production systems from my day job are under Experience."
     >
-      <div className="mb-8 flex flex-wrap gap-2" role="tablist" aria-label="Filter projects">
+      <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter projects">
         {filters.map((f) => {
           const count = f === 'Featured' ? projects.filter((p) => p.featured).length : f === 'All' ? projects.length : projects.filter((p) => p.category === f).length
           const active = f === filter
@@ -33,8 +33,7 @@ export default function Projects() {
             <button
               key={f}
               type="button"
-              role="tab"
-              aria-selected={active}
+              aria-pressed={active}
               onClick={() => setFilter(f)}
               className={`rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
                 active ? 'border-fg bg-fg text-bg' : 'border-border text-muted hover:border-fg hover:text-fg'
@@ -46,11 +45,15 @@ export default function Projects() {
         })}
       </div>
 
+      <p className="sr-only" aria-live="polite">
+        Showing {visible.length} {visible.length === 1 ? 'project' : 'projects'}
+      </p>
+
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((project) => (
           <article
             key={project.title}
-            className="group flex flex-col rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent"
+            className="reveal group flex flex-col rounded-2xl border border-border bg-surface p-6 transition-[border-color,translate,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg hover:shadow-accent/5"
           >
             <div className="mb-4 flex items-center justify-between gap-3 font-mono text-xs text-muted">
               <span>{project.category}</span>
