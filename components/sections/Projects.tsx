@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import Section from '@/components/ui/Section'
 import Badge from '@/components/ui/Badge'
-import Screenshots from '@/components/ui/Screenshots'
+import ProjectMedia from '@/components/ui/ProjectMedia'
 import { projects, socials, type ProjectCategory } from '@/lib/data'
 
 type Filter = 'Featured' | 'All' | ProjectCategory
@@ -56,7 +56,7 @@ export default function Projects() {
             key={project.title}
             className="reveal group flex flex-col rounded-2xl border border-border bg-surface p-6 transition-[border-color,translate,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-accent hover:shadow-lg hover:shadow-accent/5"
           >
-            {project.screenshots?.length ? <Screenshots title={project.title} images={project.screenshots} /> : null}
+            {project.media?.length ? <ProjectMedia title={project.title} items={project.media} /> : null}
 
             <div className="mb-4 flex items-center justify-between gap-3 font-mono text-xs text-muted">
               <span>{project.category}</span>
