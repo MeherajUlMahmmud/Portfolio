@@ -7,7 +7,7 @@ const channels = [
   { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: FaEnvelope },
   { label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/[^+\d]/g, '')}`, icon: FaPhone },
   { label: 'LinkedIn', value: 'in/meherajulmahmmud', href: socials.linkedin, icon: FaLinkedin },
-  { label: 'GitHub', value: 'MeherajUlMahmmud', href: socials.github, icon: FaGithub },
+  { label: 'GitHub', value: 'meharaj-007', href: socials.github, icon: FaGithub },
 ]
 
 export default function Contact() {
