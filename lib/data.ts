@@ -138,6 +138,8 @@ export const experience: Experience[] = [
 
 export type ProjectCategory = 'AI / ML' | 'Full-stack' | 'Mobile' | 'Tools'
 
+export type Screenshot = { src: string; alt: string; width: number; height: number }
+
 export type Project = {
   title: string
   description: string
@@ -148,6 +150,8 @@ export type Project = {
   live?: string
   status?: string
   featured?: boolean
+  /** The first is the card's cover; all open full size on click. */
+  screenshots?: Screenshot[]
 }
 
 export const projects: Project[] = [
@@ -171,6 +175,22 @@ export const projects: Project[] = [
     year: '2026',
     source: 'https://github.com/meharaj-007/oss-clarity',
     featured: true,
+  },
+  {
+    title: 'bKash Statement Analyzer',
+    description:
+      'Turns the password-protected statement PDF that bKash emails into a spending dashboard: balance over time, cash flow, fees, top recipients and when you transact. The PDF is decrypted and parsed entirely in the browser; nothing is uploaded or stored.',
+    category: 'Tools',
+    tech: ['Next.js', 'TypeScript', 'pdf.js', 'Tailwind', 'Vitest'],
+    year: '2026',
+    source: 'https://github.com/meharaj-007/bkash-analyzer',
+    live: 'https://meharaj-007.github.io/bkash-analyzer/',
+    featured: true,
+    screenshots: [
+      { src: '/projects/bkash-overview.png', alt: 'Dashboard overview: net position, money in and out, fees and insights', width: 1280, height: 800 },
+      { src: '/projects/bkash-charts.png', alt: 'Balance over time and money in versus money out by month', width: 1280, height: 800 },
+      { src: '/projects/bkash-breakdown.png', alt: 'Where the money goes, where it comes from, top recipients and fees', width: 1280, height: 800 },
+    ],
   },
   {
     title: 'Bank Statement Parser',
@@ -199,6 +219,16 @@ export const projects: Project[] = [
     category: 'Mobile',
     tech: ['Flutter', 'Dart'],
     year: '2025',
+  },
+  {
+    title: 'GoCV',
+    description:
+      'Resume builder app to create, edit and preview resumes and export them as PDF, in English and Bengali, backed by a Django REST API shared with JobBoard. My most-starred repository, with 18 stars and 8 forks.',
+    category: 'Mobile',
+    tech: ['Flutter', 'Dart', 'Django REST'],
+    year: '2024',
+    source: 'https://github.com/meharaj-007/GoCV',
+    featured: true,
   },
   {
     title: 'JobBoard',
