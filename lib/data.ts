@@ -156,6 +156,8 @@ export type Project = {
   year: string
   source?: string
   live?: string
+  /** Package registry page, such as PyPI. */
+  package?: string
   status?: string
   featured?: boolean
   /** The first is the card's cover; all open full size on click. */
@@ -177,11 +179,12 @@ export const projects: Project[] = [
   {
     title: 'oss-clarity',
     description:
-      'Open-source, self-hosted session replay and heatmaps for Django. Text is masked in the browser and no IP addresses are stored; 15 documented rules flag rage clicks, dead clicks and form abandons for review in Django admin.',
+      'Open-source, self-hosted session replay and heatmaps for Django, published on PyPI. Text is masked in the browser and no IP addresses are stored; 15 documented rules flag rage clicks, dead clicks and form abandons for review in Django admin.',
     category: 'Tools',
     tech: ['Django', 'TypeScript', 'rrweb', 'Celery', 'PostgreSQL'],
     year: '2026',
     source: 'https://github.com/meharaj-007/oss-clarity',
+    package: 'https://pypi.org/project/oss-clarity/',
     featured: true,
   },
   {

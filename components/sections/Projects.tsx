@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { SiPypi } from 'react-icons/si'
 import Section from '@/components/ui/Section'
 import Badge from '@/components/ui/Badge'
 import ProjectMedia from '@/components/ui/ProjectMedia'
@@ -77,7 +78,7 @@ export default function Projects() {
               ))}
             </div>
 
-            {(project.source || project.live) && (
+            {(project.source || project.live || project.package) && (
               <div className="mt-5 flex gap-4 border-t border-border pt-4 text-sm">
                 {project.source && (
                   <a
@@ -97,6 +98,16 @@ export default function Projects() {
                     className="inline-flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
                   >
                     <FaExternalLinkAlt size={12} /> Live
+                  </a>
+                )}
+                {project.package && (
+                  <a
+                    href={project.package}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
+                  >
+                    <SiPypi size={14} /> PyPI
                   </a>
                 )}
               </div>
